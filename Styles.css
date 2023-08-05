@@ -1,0 +1,23 @@
+/* src/styles.css */
+
+/* Apply styles to the .jumbotron class */
+.jumbotron {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Apply styles to the h1 element inside .jumbotron */
+.jumbotron h1 {
+  color: #007bff;
+}
+
+/* Apply styles to the p element inside .jumbotron */
+.jumbotron p {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Apply styles to the .container class */
+.container {
+  font-family: Arial, sans-serif;
+}
