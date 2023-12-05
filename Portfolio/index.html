@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakeena Portfolio website</title>
+    <!--<link rel="stylesheet" href="styles.css"> You can link your CSS file here -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/586446a6d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi I'm <span>Sakeena</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutPic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a B.Tech graduate with a certification in data science 
+                       and a background in data analysis from internships. Proficient in Excel, SQL, Tableau, 
+                       and Power BI, I excel in crafting data models, reports, and visualizations to reveal patterns and trends. 
+                       During my tenure as a Data Analyst Intern, I extensively utilized tools like Metabase, 
+                       Google Sheets, and Excel, refining my analytical and communication skills. Currently enhancing my front-end abilities with HTML, CSS, and JavaScript,
+                       I am passionate about leveraging data to inform decisions and drive business improvements.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick= "opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick= "opentab('education')">Eduaction</p>
+                    </div>   
+                    <div class="tab-contents active-tab" id = 'skills'>
+                        <ul>
+                            <li><span>UI/UX </span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development </span><br>Web App Development</li>
+                            <li><span>Data Analysis</span><br>Data Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar-2023   Jun-2023</span><br>Appplication Processing Intern at Globalshala</li>
+                            <li><span>Mar-2022  Sept-2022</span><br>Data Analyst Intern at HomeLane</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jan-2023</span><br>Power BI Data Analytics at all levels in Data Science at CodeBasics</li>
+                            <li><span>Jan-2022</span><br>Advanced Certification in Data Science at IIIT-B</li>
+                            <li><span>Nov-2020</span><br>Computer Science Engineering at BITM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------Services  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>web design using frond end lib. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Front End</h2>
+                <p>Front End using HTML, CSS </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p>Data Analytics using Power BI, SQL, Ms-Excel </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------Portfolio ---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Portfolio website </h3>
+                    <p> This website shows my work </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App </h3>
+                    <p> This website lets you connect with people </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Data Analysis Dashboard </h3>
+                    <p> This Dashboard helps you track your  </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+
+</div>
+<!---------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>emsami5744@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9538345744</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/sakeenasammi"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/SAKEENA (3).pdf" download class="btn btn2">Download Cv</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name='Email' placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Sakeena Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+
+
+    }
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = "0"; /*it willcallsidemenu*/
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"; /*it willcallsidemenu*/
+
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHWV6sDy3U4nWPV7O74i_9TzDzvdlHE1RUFrKiiu_LgoHCtQRtp6_HtvYfpWGczXdlZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+
+</html>
